@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f5f5f5"
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/txtAppCofre"
         android:layout_width="match_parent"
@@ -13,48 +15,48 @@
         android:text="AppCofre"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@id/txtServico"
-        android:textAlignment="center"
-        />
+        android:textAlignment="center" />
+
     <TextView
         android:id="@+id/txtServico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Serviço:"
         android:layout_marginHorizontal="10dp"
-        app:layout_constraintBottom_toTopOf="@id/edtServico"
-        />
+        app:layout_constraintBottom_toTopOf="@id/edtServico" />
+
     <EditText
         android:id="@+id/edtServico"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/txtUsuario"
-        />
+        app:layout_constraintBottom_toTopOf="@id/txtUsuario" />
+
     <TextView
         android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Usuário:"
         android:layout_marginHorizontal="10dp"
-        app:layout_constraintBottom_toTopOf="@id/edtUsuario"
-        />
+        app:layout_constraintBottom_toTopOf="@id/edtUsuario" />
+
     <EditText
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/txtSenha"
-        />
+        app:layout_constraintBottom_toTopOf="@id/txtSenha" />
+
     <TextView
         android:id="@+id/txtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Senha:"
         android:layout_marginHorizontal="10dp"
-        app:layout_constraintBottom_toTopOf="@id/edtSenha"
-        />
+        app:layout_constraintBottom_toTopOf="@id/edtSenha" />
+
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
@@ -62,73 +64,81 @@
         android:layout_margin="10dp"
         android:layout_marginHorizontal="10dp"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@id/btnAnterior"
-        />
-    <Button
+        app:layout_constraintBottom_toTopOf="@id/btnAnterior" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAnterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="Anterior"
-        android:background="@drawable/editgradientebrancoazulbrancoicone"
+        android:background="#b2d8f5"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/btnCadastrar"
         app:layout_constraintEnd_toStartOf="@+id/btnNovo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnNovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:onClick="clickBtnNovo"
         android:text="Novo"
-        android:background="@drawable/editgradientebrancoazulbrancoicone"
+        android:background="#b2d8f5"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/btnCadastrar"
         app:layout_constraintEnd_toStartOf="@+id/btnProximo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnAnterior" />
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnProximo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="Próximo"
-        android:background="@drawable/editgradientebrancoazulbrancoicone"
+        android:background="#b2d8f5"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/btnCadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnNovo" />
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="clickBtnCadastrar"
         android:text="Cadastrar"
+        android:background="#c0c0c0"
         android:textColor="@color/black"
-        android:background="@drawable/botaoazuloval"
         app:layout_constraintBottom_toTopOf="@id/btnAlterar"
         tools:layout_editor_absoluteX="10dp" />
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAlterar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="clickBtnAlterar"
         android:text="Alterar"
-        android:background="@drawable/botaoazuloval"
+        android:background="#c0c0c0"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/btnDeletar"
         tools:layout_editor_absoluteX="10dp" />
-    <Button
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDeletar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:onClick="clickBtnDeletar"
         android:text="Deletar"
+        android:background="#c0c0c0"
         android:textColor="@color/black"
-        android:background="@drawable/botaoazuloval"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="10dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
